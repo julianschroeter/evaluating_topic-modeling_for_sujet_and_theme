@@ -33,8 +33,7 @@ class DocFeatureMatrix():
         self.metadata_df = metadata_df
         self.mallet = mallet
 
-        print("data_csv_filepath is:", self.data_matrix_filepath)
-        print("metadata_csv_filepath is:", self.metadata_csv_filepath)
+
 
 
         if self.metadata_csv_filepath is not None:
@@ -46,7 +45,7 @@ class DocFeatureMatrix():
                 self.data_matrix_df = pd.read_csv(self.data_matrix_filepath, index_col=0)
 
             elif self.mallet == True:
-                print( "hier muss die Anpassung an mallet output df erfolgen: an doc-topic-matrix")
+
                 df = pd.read_csv(self.data_matrix_filepath, index_col=1, sep='\t', header=None)
                 df.drop(df.columns[0], axis=1, inplace=True)
                 #df.columns = [i for i in range(len(df.columns))]

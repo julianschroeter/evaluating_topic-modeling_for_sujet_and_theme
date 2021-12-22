@@ -20,7 +20,7 @@ def set_system_data_directory(system_name):
     """
 
     if system_name == "wcph113":
-        return "/mnt/data/users/..." # set path
+        return "/mnt/data/users/schroeter" # set path
     else:
         pass
 
@@ -28,7 +28,7 @@ def set_system_data_directory(system_name):
 
 def local_temp_directory(system_name):
     if system_name == "wcph113":
-        return "/mnt/data/users/..." # set path
+        return "/mnt/data/users/schroeter/CLS_temp" # set path
 
 def global_corpus_directory(system_name, test=False):
     """
