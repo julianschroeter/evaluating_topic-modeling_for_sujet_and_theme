@@ -3,6 +3,10 @@ This repository includes data and code for a paper on validating topic modeling 
 
 The data folder contains the relevant processed corpus representations:
 
+Large files are given access by the following link:
+mallet output file: https://www.dropbox.com/s/o83eh6frd8b5eay/chunks_novellas.mallet?dl=0
+document term matrix for corpus (basis for baseline classification): https://www.dropbox.com/s/1xu002wdd3xy2jd/doc_term_matrix_5000mfw_lemmatized_tfidf.csv?dl=0
+
 Two tables represt the metadata: 
 - Historical metadata for genre and year of publication in novellas.metadata.csv
 - Annotations of the relevant sujets and themes in novellas_annotations.csv
