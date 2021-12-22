@@ -23,7 +23,8 @@ Our topic model was generated with mallet 2.0.8 in a process of recursive adapti
 - chunk length: 1000 words
 - reduction on lemmatized nouns, verbs, adjectivs, and adverbs before chunking
 - removing proper names and stop words
-- hyperparamter optimization in mallet: ...
+- parameter settings in mallet: alpha: 2.5, beta: 0.05, optimize-burn-in: 200, optimize-interval: 100
+- the concret mallet-command: `mallet train-topics --input chunks_fixed.mallet --num-topics 100 --optimize-burn-in 200 --optimize-interval 100 --output-doc-topics output_composition_100topics1.txt --output-topic-keys output_keys_100topics1.txt --num-threads 2 --beta 0.005 --alpha 2.5`
 
 
 The code with the scripts is stored in the scripts folder, relevant functions and classes are in the presetting module.
