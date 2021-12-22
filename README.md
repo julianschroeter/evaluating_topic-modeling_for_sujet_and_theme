@@ -33,8 +33,8 @@ The relevant classes and functions are in the preprocessing.themes and the .corp
 This process requires a full corpus of texts, which can, due to copyright issues and due to the policy of a larger project, not be provided. The resulting Document-Themes-Matrix.csv is stored in the data folder.
 
 The validations in section 4 of the paper can be reproduced with: 
-extensional_topic_validation.py
-extensional_word-embeddings-lists-validation.py
+extensional_topic_validation.py,
+extensional_word-embeddings-lists-validation.py,
 baseline_classification_BOW-model.py
 
 Figure 2 in the conclusion can be reproduced with visualize_sujet_development.py
