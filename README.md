@@ -3,21 +3,20 @@ This repository includes data and code for a paper on validating topic modeling 
 
 The data folder contains the relevant processed corpus representations:
 
-Large files are given access by the following link:
+The following two large files are given access by the following link:
 mallet output file: https://www.dropbox.com/s/o83eh6frd8b5eay/chunks_novellas.mallet?dl=0
 document term matrix for corpus (basis for baseline classification): https://www.dropbox.com/s/1xu002wdd3xy2jd/doc_term_matrix_5000mfw_lemmatized_tfidf.csv?dl=0
 
-Two tables represt the metadata: 
+All other files are stored in the data folder in this repository, including
+a) Two tables represt the metadata: 
 - Historical metadata for genre and year of publication in novellas.metadata.csv
 - Annotations of the relevant sujets and themes in novellas_annotations.csv
 
-Lists of words approximating sujets (in the wordlists_embeddings sub-folder) based on a method that is documented in the scripts folder: The wordlists can be generated with the generate_Document-Themes-Matrix.py script, which uses functions from the preprocessing.themes module.
+b) Lists of words approximating sujets (in the wordlists_embeddings sub-folder) based on a method that is documented in the scripts folder: The wordlists can be generated with the generate_Document-Themes-Matrix.py script, which uses functions from the preprocessing.themes module.
 
 
 
-The shares 
-
-The shares of topics for all documents (separated in chunks of 1000= words as output_composition_100topics.txt file (mallet output)
+c) The shares of topics for all documents (separated in chunks of 1000= words as output_composition_100topics.txt file (mallet output)
 The topic keys for our 100 topics model. 
 
 Our topic model was generated with mallet 2.0.8 in a process of recursive adaption of preprocessing and modeling parameters, such as:
