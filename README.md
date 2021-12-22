@@ -16,6 +16,6 @@ The topic keys for our 100 topics model.
 
 Our topic model was generated with mallet 2.0.8 in a process of recursive adaption of preprocessing and modeling parameters, such as:
 - chunk length: 1000 words
-- reduction on nouns, verbs, adjectivs, and adverbs before chunking
+- reduction on lemmatized nouns, verbs, adjectivs, and adverbs before chunking
 - removing proper names and stop words
 - hyperparamter optimization in mallet: ...
